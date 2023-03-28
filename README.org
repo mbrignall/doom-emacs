@@ -17,27 +17,28 @@ Switching to Doom Emacs has introduced me to an incredible range of powerful fea
 
 I am genuinely grateful for the work put into Doom Emacs, and I am excited to continue exploring its capabilities. If you haven't tried it yet, I highly recommend giving it a go - it might just change the way you think about text editors and development environments!
 
-This 'README.org' file serves as the primary source of documentation for my Doom Emacs configuration. It contains detailed information about my setup, including the packages I use, the customizations I've made, and any tips or tricks that I've found helpful along the way.
+This ~README.org~ file serves as the primary source of documentation for my Doom Emacs configuration. It contains detailed information about my setup, including the packages I use, the customizations I've made, and any tips or tricks that I've found helpful along the way.
 
 * How to use
 
-If you put the 'README.org' inside '.doom.d' directory (or create your own 'README.org' with your personal config) along with the following empty files:
+If you put the ~README.org~ inside ~.doom.d~ directory (or create your own ~README.org~ with your personal config) along with the following empty files:
 
-- 'config.el'
-- 'custom.el'
-- 'init.el'
-- 'packages.el'
+- ~config.el~
+- ~custom.el~
+- ~init.el~
+- ~packages.el~
 
-You then only have to make edits to the 'README.org' (or call it what you like .org) then use the following keybindings:
+You then only have to make edits to the ~README.org~ (or call it what you like .org) then use the following keybindings:
 
 #+begin_src
 C-c C-v t
 #+end_src
 
-It should sync by then running 'doom sync'.
+It should sync by then running ~doom sync~.
 
 ** config.el
-The 'config.el' file is where you define your personal settings and configurations for Emacs and the various packages you use.
+
+The ~config.el~ file is where you define your personal settings and configurations for Emacs and the various packages you use.
 
 #+BEGIN_SRC elisp :tangle config.el
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
@@ -132,7 +133,7 @@ The 'config.el' file is where you define your personal settings and configuratio
 #+END_SRC
 
 ** init.el
-The 'init.el' file is the main entry point for my Doom Emacs configuration.
+The ~init.el~ file is the main entry point for my Doom Emacs configuration.
 
 It's responsible for setting up Doom's core features and loading the modules I've enabled in this file.
 
@@ -343,7 +344,7 @@ It's responsible for setting up Doom's core features and loading the modules I'v
 
 
 ** packages.el
-The 'packages.el' file is where I have defined additional packages to be installed and managed by Doom.
+The ~packages.el~ file is where I have defined additional packages to be installed and managed by Doom.
 
 #+BEGIN_SRC elisp :tangle packages.el
 ;; -*- no-byte-compile: t; -*-
