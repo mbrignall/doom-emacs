@@ -1,9 +1,39 @@
 #+TITLE: Doom Emacs Configuration
 #+AUTHOR: Martin Brignall
-#+OPTIONS: toc:nil
+
+* Table of contents
+- [[#config.el][config.el]]
+- [[#init.el][init.el]]
+- [[#packages.el][packages.el]]
+- [[#custom.el][custom.el]]
+- [[#formatting and styles][Formatting and Styles]]
 
 * Introduction
-This is an Org-mode file to store and manage my Doom Emacs configuration files, including `config.el`, `init.el`, and `packages.el`.
+
+I recently started using [[https://github.com/hlissner/doom-emacs][Doom Emacs]], and I must say, it has been an absolute game-changer for me. Doom Emacs is a configuration framework for [[https://www.gnu.org/software/emacs/][GNU Emacs]], built with a focus on performance, usability, and aesthetics. It has dramatically improved my productivity and overall coding experience.
+
+Switching to Doom Emacs has introduced me to an incredible range of powerful features and integrations with other tools that I use daily. Its thoughtful design and extensive customization options have made it an essential part of my workflow. The vibrant community behind Doom Emacs has also been incredibly supportive, and I am continually discovering new ways to enhance my Emacs experience.
+
+I am genuinely grateful for the work put into Doom Emacs, and I am excited to continue exploring its capabilities. If you haven't tried it yet, I highly recommend giving it a go - it might just change the way you think about text editors and development environments!
+
+This README.org file serves as the primary source of documentation for my Doom Emacs configuration. It contains detailed information about my setup, including the packages I use, the customizations I've made, and any tips or tricks that I've found helpful along the way.
+
+* How to use
+
+If you put the README.org inside .doom.d directory (or create your own README.org wiht your personal config) along with the following empty files:
+
+- config.el
+- custom.el
+- init.el
+- packages.el
+
+You then only have to make edits to the README.org (or call it what you like .org) then use the following keybindings:
+
+#+begin_src
+C-c C-v t
+#+end_src
+
+It should sync by then running `doom sync`.
 
 ** config.el
 The `config.el` file is where you define your personal settings and configurations for Emacs and the various packages you use.
@@ -310,6 +340,7 @@ It's responsible for setting up Doom's core features and loading the modules I'v
        (default +bindings +smartparens))
 #+END_SRC
 
+
 ** packages.el
 The `packages.el` file is where I have defined additional packages to be installed and managed by Doom.
 
@@ -357,9 +388,6 @@ The `packages.el` file is where I have defined additional packages to be install
 (package! webkit-color-picker)
 #+END_SRC
 
-* Formatting and Styles
-TODO Finish this at some point soon
-
 ** Custom.el
 
 #+begin_src emacs-lisp :tangle custom.el
@@ -382,3 +410,6 @@ TODO Finish this at some point soon
  )
 
 #+end_src
+
+* Formatting and Styles
+TODO Finish this at some point soon
