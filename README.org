@@ -3,7 +3,7 @@
 #+OPTIONS: toc:nil
 
 * Introduction
-This is an Org-mode file to store and manage your Doom Emacs configuration files, including `config.el`, `init.el`, and `packages.el`.
+This is an Org-mode file to store and manage my Doom Emacs configuration files, including `config.el`, `init.el`, and `packages.el`.
 
 ** config.el
 The `config.el` file is where you define your personal settings and configurations for Emacs and the various packages you use.
@@ -98,19 +98,12 @@ The `config.el` file is where you define your personal settings and configuratio
 
 (require 'request)
 
-(defun get-current-weather (location api-key)
-  "Retrieves the current weather data for the given location using the OpenWeatherMap API."
-  (request
-   (format "https://archive-api.open-meteo.com/v1/archive?latitude=51.46&longitude=-2.60&start_date=2023-01-01&end_date=2023-03-26&hourly=temperature_2m,precipitation,rain,snowfall,windspeed_10m,windspeed_100m,winddirection_10m,winddirection_100m,windgusts_10m&daily=rain_sum,windspeed_10m_max,windgusts_10m_max,winddirection_10m_dominant&timezone=auto&windspeed_unit=mph" location api-key)
-   :type "GET"
-   :parser 'json-read
-   :success (cl-function (lambda (&key data &allow-other-keys)
-                           data))))
-
 #+END_SRC
 
 ** init.el
-The `init.el` file is the main entry point for your Doom Emacs configuration. It's responsible for setting up Doom's core features and loading the modules you've enabled in this file.
+The `init.el` file is the main entry point for my Doom Emacs configuration.
+
+It's responsible for setting up Doom's core features and loading the modules I've enabled in this file.
 
 #+BEGIN_SRC emacs-lisp :tangle init.el
 ;;; init.el -*- lexical-binding: t; -*-
@@ -318,7 +311,7 @@ The `init.el` file is the main entry point for your Doom Emacs configuration. It
 #+END_SRC
 
 ** packages.el
-The `packages.el` file is where you define additional packages to be installed and managed by Doom. You can also configure package-specific settings in this file.
+The `packages.el` file is where I have defined additional packages to be installed and managed by Doom.
 
 #+BEGIN_SRC emacs-lisp :tangle packages.el
 ;; -*- no-byte-compile: t; -*-
@@ -365,4 +358,4 @@ The `packages.el` file is where you define additional packages to be installed a
 #+END_SRC
 
 * Formatting and Styles
-Add your custom formatting and styles here.
+TODO Finish this at some point soon
