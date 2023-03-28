@@ -413,3 +413,23 @@ The `packages.el` file is where I have defined additional packages to be install
 
 * Formatting and Styles
 TODO Finish this at some point soon
+
+* EXWM? What's that all about?
+
+So for a bit I was experimenting with various desktop environments and [[https://github.com/ch11ng/exwm][EXWM]] came up as a suggestion.
+
+#+begin_quote
+It's a 'full-featured' tiling X window manager for Emacs built on top of [[https://github.com/ch11ng/xelb][XELB]]. It features:
+
+- Fully keyboard-driven operations
+- Hybrid layout modes (tiling & stacking)
+- Dynamic workspace support
+- ICCCM/EWMH compliance
+- (Optional) RandR (multi-monitor) support
+- (Optional) Builtin system tray
+- (Optional) Builtin input method
+#+end_quote
+
+I kinda gave up on EXWM after discovering Sway - see my config files:
+
+[[https://github.com/mbrignall/sway-dotfiles][mbrignall/sway-dotfiles]]
