@@ -2,11 +2,11 @@
 #+AUTHOR: Martin Brignall
 
 * Table of contents
-- [[#config.el][config.el]]
-- [[#init.el][init.el]]
-- [[#packages.el][packages.el]]
-- [[#custom.el][custom.el]]
-- [[#formatting and styles][Formatting and Styles]]
+- [[#configel][config.el]]
+- [[#initel][init.el]]
+- [[#packagesel][packages.el]]
+- [[#customel][custom.el]]
+- [[#formatting-and-styles][Formatting and Styles]]
 
 * Introduction
 
@@ -38,7 +38,7 @@ It should sync by then running `doom sync`.
 ** config.el
 The `config.el` file is where you define your personal settings and configurations for Emacs and the various packages you use.
 
-#+BEGIN_SRC emacs-lisp :tangle config.el
+#+BEGIN_SRC elisp :tangle config.el
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here! Remember, you do not need to run 'doom
@@ -135,7 +135,7 @@ The `init.el` file is the main entry point for my Doom Emacs configuration.
 
 It's responsible for setting up Doom's core features and loading the modules I've enabled in this file.
 
-#+BEGIN_SRC emacs-lisp :tangle init.el
+#+BEGIN_SRC elisp :tangle init.el
 ;;; init.el -*- lexical-binding: t; -*-
 
 ;; This file controls what Doom modules are enabled and what order they load
@@ -344,7 +344,7 @@ It's responsible for setting up Doom's core features and loading the modules I'v
 ** packages.el
 The `packages.el` file is where I have defined additional packages to be installed and managed by Doom.
 
-#+BEGIN_SRC emacs-lisp :tangle packages.el
+#+BEGIN_SRC elisp :tangle packages.el
 ;; -*- no-byte-compile: t; -*-
 ;;; private/my-packages/packages.el
 
@@ -390,7 +390,7 @@ The `packages.el` file is where I have defined additional packages to be install
 
 ** Custom.el
 
-#+begin_src emacs-lisp :tangle custom.el
+#+begin_src elisp :tangle custom.el
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
