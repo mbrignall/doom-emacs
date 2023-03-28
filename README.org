@@ -7,6 +7,7 @@
 - [[#packagesel][packages.el]]
 - [[#customel][custom.el]]
 - [[#formatting-and-styles][Formatting and Styles]]
+- [[#exwm-whats-that-all-about][EXWM - What's that all about?]]
 
 * Introduction
 
