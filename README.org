@@ -81,7 +81,7 @@ The ~config.el~ file is where you define your personal settings and configuratio
   :after org
   :hook (org-mode . org-bullets-mode)
   :init
-  (setq org-bullets-bullet-list '("◉" "○" "✸" "✿" "✤" "✜")))
+  (setq org-bullets-bullet-list '("⚫" "⚪" "⦿" "◌" "○" "□")))
 
 ;; Set up fonts
 (setq doom-font (font-spec :family "FuraMono Nerd Font" :size 12)
